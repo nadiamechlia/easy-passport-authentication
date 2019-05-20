@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Easy passport Authentication</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="no-margin container__title">Easy passport Authentication</h1>
+
+        <div class="container__local">
+            <div class="container__local__bloc">
+                <!-- Login -->
+                <form action="/login" method="post">
+                    <div class="container__local__bloc__input-box">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="container__local__bloc__input-box">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="container__local__bloc__submit">Login</button>
+                </form>
+            </div>
+
+            <div class="container__local__bloc">
+                <!-- SignUp -->
+                <form action="/signup" method="post">
+                    <div class="container__local__bloc__input-box">
+                        <input type="text" name="name" placeholder="Full name">
+                    </div>
+                    <div class="container__local__bloc__input-box">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="container__local__bloc__input-box">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="container__local__bloc__submit">Signin</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container__social">
+            <div class="container__social__facebook">
+                <a href="/auth/facebook">Facebook</a>
+            </div>
+            <div class="container__social__google">
+                <a href="/auth/google">Google+</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

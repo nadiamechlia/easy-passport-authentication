@@ -1,0 +1,30 @@
+{
+  "name": "easy-passport-authentication",
+  "version": "0.0.1",
+  "description": "Compelete guide to easy Node Passport authentication",
+  "main": "index.js",
+  "author": "Nadia Mechlia",
+  "license": "ISC",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "start:watch": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.6",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

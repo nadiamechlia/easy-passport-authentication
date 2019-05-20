@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Easy passport Authentication</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="no-margin container__title">Easy passport Authentication</h1>
+        <h1 class="no-margin container__title">Profile</h1>
+
+        <div class="container__infos">
+            <!-- LOCAL LOGIN -->
+            <% if (user.local.email) { %>
+            <p>
+                <strong>Id</strong>: <%= user._id %><br>
+                <strong>Email</strong>: <%= user.local.email %><br>
+                <strong>Full name</strong>: <%= user.local.name %>
+            </p>
+            <% } %>
+
+            <!-- FACEBOOK LOGIN -->
+            <% if (user.facebook.token) { %>
+            <p>
+                <strong>id</strong>: <%= user.facebook.id %><br>
+                <strong>token</strong>: <%= user.facebook.token %><br>
+                <strong>email</strong>: <%= user.facebook.email %><br>
+                <strong>name</strong>: <%= user.facebook.name %><br>
+            </p>
+            <% }%>
+
+            <!-- GOOGLE LOGIN -->
+            <% if (user.google.token) { %>
+            <p>
+                <strong>id</strong>: <%= user.google.id %><br>
+                <strong>token</strong>: <%= user.google.token %><br>
+                <strong>email</strong>: <%= user.google.email %><br>
+                <strong>name</strong>: <%= user.google.name %>
+            </p>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>
